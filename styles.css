@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ==========================Color variables =======================================*/
+
+:root{
+    --color-bg: #F1F1F1;
+    --secondary-color-bg: #0b0b0b;
+    --primary-text-color: #f2f60a;
+    --secondary-text-color: #FFFFFF;
+
+    --transition: all 400ms ease;
+
+    /* =========Breakpoints ================*/
+    --bp-largest: 75em; 
+    --bp-large: 62.5em;
+    --bp-medium: 50em;
+    --bp-small: 37.5em; 
+}
+
+
+
+/*====================== GENERAL SETUP ==========================================*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.btn{
+    width: max-content;
+    display:inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+body{
+    background-color:var(--color-bg);
+}
+
+
+
+/*=========================== HEADER =====================================*/
+
+#header-img{
+    width: 90px;
+    height: 90px;
+    
+}
