@@ -8,18 +8,32 @@
     <title>Product Landing page</title>
   </head>
   <body>
-    
-      <header id="header">
-        <img src="./assets/png-clipart-wings-and-a-sword.png" id="header-img" alt="logo" />
+    <header id="header">
+      <div id="header__navigation">
+        <div class="header__logo">
+          <img src="./assets/sword-icon-32146.png" alt="logo" id="header-img" />
+          <h2 class="company-name">swordmanship</h2>
+        </div>
+
         <nav id="nav-bar">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#About" class="nav-link">About</a></li>
+            <li><a href="#Pricing" class="nav-link">Pricing</a></li>
+            <li><a href="#Gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#Contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
-      </header>
-    
+      </div>
+      <div id="header__title">
+        <h1>Best Sword Crafting</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="About"></section>
+      <section id="Pricing"></section>
+      <section id="Gallery"></section>
+      <section id="Contact"></section>
+    </div>
   </body>
 </html>
