@@ -12,7 +12,6 @@
 
   /* =========Breakpoints ================*/
   --bp-largest: 75em;
-  --bp-large: 62.5em;
   --bp-medium: 50em;
   --bp-small: 37.5em;
 }
@@ -43,23 +42,23 @@ h5 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
 }
 
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-bg);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--secondary-text-color);
   transition: var(--transition);
 }
 
 .btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
+  background: var(--color-bg);
+  color: var(--secondary-color-bg);
   border-color: transparent;
 }
 
@@ -67,20 +66,29 @@ body {
   background-color: var(--color-bg);
 }
 
-/*=========================== HEADER =====================================*/
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
-#header {
+/*=========================== HEADER =====================================*/
+#hero {
   height: 100vh;
   background-image: url("./assets/background.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 #header__navigation {
   height: 10rem;
   display: flex;
   justify-content: space-between;
   padding-right: 10rem;
   padding-left: 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .header__logo {
   display: flex;
@@ -92,7 +100,9 @@ body {
 #header-img {
   width: 90px;
   height: 90px;
+  color: #fff;
 }
+
 #nav-bar ul {
   width: 50rem;
   height: 10rem;
@@ -103,4 +113,68 @@ body {
 .nav-link {
   color: var(--secondary-text-color);
   font-size: 1.8rem;
+}
+
+#hero__title {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+#hero__title h1 {
+  color: var(--secondary-text-color);
+}
+
+.btn-title {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/*============================ ABOUT SECTION ====================================*/
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+#video {
+  width: 500px;
+  height: 355px;
+}
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+}
+
+/*============================ PRICING SECTIONS ====================================*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+#product-img {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }

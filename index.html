@@ -8,32 +8,81 @@
     <title>Product Landing page</title>
   </head>
   <body>
-    <header id="header">
-      <div id="header__navigation">
-        <div class="header__logo">
-          <img src="./assets/sword-icon-32146.png" alt="logo" id="header-img" />
-          <h2 class="company-name">swordmanship</h2>
+    <section id="hero">
+      <header id="header">
+        <div id="header__navigation">
+          <div class="header__logo">
+            <img
+              src="https://img.icons8.com/dotty/80/FFFFFF/sword--v1.png"
+              alt="logo"
+              id="header-img"
+            />
+            <h2 class="company-name">swordmanship</h2>
+          </div>
+
+          <nav id="nav-bar">
+            <ul>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#pricing" class="nav-link">Pricing</a></li>
+              <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <nav id="nav-bar">
-          <ul>
-            <li><a href="#About" class="nav-link">About</a></li>
-            <li><a href="#Pricing" class="nav-link">Pricing</a></li>
-            <li><a href="#Gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#Contact" class="nav-link">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div id="header__title">
+      </header>
+      <div id="hero__title">
         <h1>Best Sword Crafting</h1>
+        <a class="btn btn-title">Shop Now</a>
       </div>
-    </header>
+    </section>
 
-    <div class="container">
-      <section id="About"></section>
-      <section id="Pricing"></section>
-      <section id="Gallery"></section>
-      <section id="Contact"></section>
-    </div>
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+      <h2 class="section-title">Follow our work - Keep Updated</h2>
+      <div class="flex">
+        <iframe src="https://www.youtube.com/embed/UbSrnjNGBdA" id="video">
+        </iframe>
+        <div">
+          <h3>Wanna stay in touch?</h3>
+          <form id="form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="enter your email here"
+            />
+            <input type="submit" id="submit" value="send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <h2 class="section-title">Pricing</h2>
+      <div class="flex">
+
+        <div class="card">
+          <img src="./assets/axe.jpg" alt="sword" id="product-img" />
+          <h3>Norman Sword</h3>
+          <p class="price">$1999.99</p>
+          <p>Some text about the jeans..</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./assets/sword1.jpg" alt="sword2" id="product-img" />
+          <h3>Middle Age Sword</h3>
+          <p class="price">$519.99</p>
+          <p>Some text about the jeans..</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+          <img src="./assets/sword2.jpg" alt="sword 3" id="product-img" />
+          <h3>Damas Longsword</h3>
+          <p class="price">$19.99</p>
+          <p>Some text about the jeans..</p>
+          <a href="#" class="btn"></a>
+        </div>
+      </div>
+    </section>
+    <section id="gallery"></section>
   </body>
 </html>
