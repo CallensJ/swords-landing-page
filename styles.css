@@ -83,7 +83,7 @@ section {
 /*=========================== HEADER =====================================*/
 #hero {
   height: 100vh;
-  background-image: url("./assets/background.jpg");
+  background-image: url("https://raw.githubusercontent.com/CallensJ/swords-landing-page/main/assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
